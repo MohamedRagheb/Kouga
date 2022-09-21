@@ -1,3 +1,8 @@
+*{
+    padding: 0px;
+    text-decoration: none;
+    outline: none;
+}
 .top-dash{
     background-color: #222222;
     height: 50px;
@@ -21,17 +26,16 @@
 
 }
 .text{
-    position: absolute;top: 29px;
-    left: 95%;
+  
     color: rgba(255, 255, 255, 0.541);
 }
 .text-2{
-    position: absolute;top: 30px;
-    left: 89%;
+    
     color: rgba(255, 255, 255, 0.541);
 }
 .main-page{
-    height:764px;
+    height:100%;
+   margin-bottom: 0px;
     background-color:#222222;
     margin-top:-17px;
     margin-left:-9px;
@@ -39,6 +43,7 @@
     padding-left: 9px;
     margin-right: -9px;
     padding-right: 9px;
+    width: 100%;
     
 }
 .img-bottom{
@@ -65,7 +70,7 @@
 }
 .right-part-1{
     background-color:transparent;
-    height:660px;
+    height:100vh;
     width: 735px;
     position: absolute;top:69px;
     left: 51.25%;
@@ -121,4 +126,76 @@
     border: 3px solid transparent;
     position: relative;left: 9px;
    
+}
+.navul  {
+    position: relative;
+    float: right;
+ 
+}
+.navul li{
+    display: inline-block;
+    padding-left: 15px;
+    
+}
+        /*mobile-responsive*/
+@media only screen and (max-width: 600px){
+    /*navresponse*/
+    .top-dash{
+        width: 100%;
+        
+    }
+    .top-dash ul {
+        margin-right: 9vw;
+    }
+    .top-dash ul li {
+        display: inline-block;
+        font-size: 17px;
+    }
+    /*end of nav responsivnes*/
+    /*left part responsivness*/
+    .left-part{
+        width: 98%;
+        top: 68px;
+        height: 30vh;
+        border-bottom:solid 3px #7e7e7e;;
+    }
+    .left-part .img-bottom{
+        position: relative;
+        top: 25%;
+        left:3%;
+        width: 90%;
+        padding-bottom:22px ;
+        margin-top: -35px;
+        border: 1px solid transparent;
+    }
+    .left-part .img-bottom img {
+        height: 100%;
+        width: 100%;
+        margin-top: -15px;
+    }
+    /*end of left part responsiveness*/
+    /*start of left part responsiveness*/
+
+    .right-part-1{
+        width: 99%;
+        position: relative;
+        left: 3px;
+        margin-top: 20px;
+        padding: 0px;
+       
+    }
+    .right-part-1 .reg-box{
+        position: relative;
+        left: 2px;
+        top: 12px;
+        width: 82vw;
+        padding-left: 3vw;
+        margin-top: 5px;
+    }
+    .right-part-1 .reg-box .text-box{
+        width: 82vw;
+    }
+    .right-part-1 .reg-box .sum-but{
+        float: right;
+    }
 }
